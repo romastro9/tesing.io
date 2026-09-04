@@ -14,7 +14,15 @@ A clean, responsive bilingual (Khmer/English) reference guide to essential Cambo
 
 ## Run locally
 
-Open `index.html` directly, or serve the folder:
+For a single-file version, download and open `preview.html`. It includes the CSS and JavaScript inside the HTML file.
+
+To regenerate it after editing the source files:
+
+```bash
+node build-preview.js
+```
+
+Alternatively, keep `index.html`, `styles.css` and `app.js` together, then open `index.html` directly or serve the folder:
 
 ```bash
 python -m http.server 8080
