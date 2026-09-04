@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="km">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ស្វែងយល់ផ្លាកសញ្ញាចរាចរណ៍កម្ពុជា និយមន័យ និងការផាកពិន័យជាភាសាខ្មែរ និងអង់គ្លេស។" />
+  <meta name="theme-color" content="#f5f5f7" />
+  <title>ផ្លូវសុវត្ថិភាព — Cambodia Road Signs</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Khmer:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav shell" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="RoadSafe home">
+        <span class="brand-mark" aria-hidden="true"><span></span></span>
+        <span data-i18n="brand">ផ្លូវសុវត្ថិភាព</span>
+      </a>
+      <div class="nav-links">
+        <a href="#signs" data-i18n="navSigns">ផ្លាកសញ្ញា</a>
+        <a href="#fines" data-i18n="navFines">ការផាកពិន័យ</a>
+        <a href="#guide" data-i18n="navGuide">មគ្គុទ្ទេសក៍</a>
+      </div>
+      <div class="nav-actions">
+        <button class="icon-button" id="themeToggle" type="button" aria-label="Toggle theme">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v2m0 14v2M3 12h2m14 0h2M5.64 5.64l1.42 1.42m9.88 9.88 1.42 1.42m0-12.72-1.42 1.42M7.06 16.94l-1.42 1.42M16 12a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z"/></svg>
+        </button>
+        <button class="lang-toggle" id="langToggle" type="button" aria-label="Change language">
+          <span class="active">ខ្មែរ</span><span>EN</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero shell">
+      <div class="hero-copy reveal">
+        <div class="eyebrow"><span class="live-dot"></span><span data-i18n="eyebrow">មគ្គុទ្ទេសក៍សុវត្ថិភាពផ្លូវគោកកម្ពុជា</span></div>
+        <h1 data-i18n="heroTitle">ស្គាល់ស្លាក។<br><span>បើកបរដោយសុវត្ថិភាព។</span></h1>
+        <p data-i18n="heroText">ស្វែងយល់ពីផ្លាកសញ្ញាចរាចរណ៍ និយមន័យ និងការផាកពិន័យក្នុងកន្លែងតែមួយ—រចនាឡើងឱ្យងាយអាន និងងាយស្វែងរក។</p>
+        <div class="hero-actions">
+          <a class="primary-button" href="#signs"><span data-i18n="explore">ចាប់ផ្តើមស្វែងយល់</span><span aria-hidden="true">↘</span></a>
+          <button class="text-button" id="randomSign" type="button"><span data-i18n="random">បង្ហាញផ្លាកចៃដន្យ</span><span aria-hidden="true">→</span></button>
+        </div>
+        <div class="hero-stats" aria-label="Site statistics">
+          <div><strong id="signCount">28</strong><span data-i18n="statSigns">ផ្លាកសំខាន់ៗ</span></div>
+          <div><strong>4</strong><span data-i18n="statCats">ប្រភេទ</span></div>
+          <div><strong>2</strong><span data-i18n="statLangs">ភាសា</span></div>
+        </div>
+      </div>
+      <div class="hero-visual reveal" aria-hidden="true">
+        <div class="orb orb-one"></div><div class="orb orb-two"></div>
+        <div class="hero-sign hero-sign-stop"><span>STOP</span></div>
+        <div class="hero-sign hero-sign-warning"><span>!</span></div>
+        <div class="hero-sign hero-sign-info"><span>↗</span></div>
+        <div class="road-line line-one"></div><div class="road-line line-two"></div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Safety reminder">
+      <div class="ticker-track">
+        <span data-i18n="ticker1">ពាក់មួកសុវត្ថិភាព</span><i></i>
+        <span data-i18n="ticker2">គោរពល្បឿនកំណត់</span><i></i>
+        <span data-i18n="ticker3">កុំប្រើទូរសព្ទពេលបើកបរ</span><i></i>
+        <span data-i18n="ticker4">ឈប់ពេលភ្លើងក្រហម</span><i></i>
+        <span data-i18n="ticker1">ពាក់មួកសុវត្ថិភាព</span><i></i>
+        <span data-i18n="ticker2">គោរពល្បឿនកំណត់</span><i></i>
+      </div>
+    </section>
+
+    <section class="catalog shell section" id="signs">
+      <div class="section-heading reveal">
+        <div><span class="section-index">01</span><p class="kicker" data-i18n="catalogKicker">បណ្ណាល័យផ្លាកសញ្ញា</p></div>
+        <h2 data-i18n="catalogTitle">ស្វែងរកអ្វីដែលអ្នក<br>ចង់ស្គាល់។</h2>
+        <p data-i18n="catalogText">ចុចលើផ្លាកណាមួយ ដើម្បីមើលនិយមន័យ សកម្មភាពត្រឹមត្រូវ និងព័ត៌មានផាកពិន័យ។</p>
+      </div>
+
+      <div class="catalog-toolbar reveal">
+        <label class="search-box" for="searchInput">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m20 20-4-4"></path></svg>
+          <input id="searchInput" type="search" placeholder="ស្វែងរកផ្លាកសញ្ញា..." autocomplete="off" />
+          <kbd>⌘ K</kbd>
+        </label>
+        <div class="view-toggle" role="group" aria-label="View style">
+          <button class="active" data-view="grid" aria-label="Grid view"><svg viewBox="0 0 24 24"><rect x="4" y="4" width="6" height="6" rx="1"/><rect x="14" y="4" width="6" height="6" rx="1"/><rect x="4" y="14" width="6" height="6" rx="1"/><rect x="14" y="14" width="6" height="6" rx="1"/></svg></button>
+          <button data-view="list" aria-label="List view"><svg viewBox="0 0 24 24"><path d="M8 6h12M8 12h12M8 18h12"/><circle cx="4" cy="6" r="1"/><circle cx="4" cy="12" r="1"/><circle cx="4" cy="18" r="1"/></svg></button>
+        </div>
+      </div>
+
+      <div class="filter-row reveal" id="filterRow" role="tablist" aria-label="Sign categories">
+        <button class="filter-chip active" data-filter="all" data-i18n="filterAll">ទាំងអស់</button>
+        <button class="filter-chip" data-filter="warning" data-i18n="filterWarning">សញ្ញាប្រុងប្រយ័ត្ន</button>
+        <button class="filter-chip" data-filter="prohibition" data-i18n="filterProhibition">សញ្ញាហាមឃាត់</button>
+        <button class="filter-chip" data-filter="mandatory" data-i18n="filterMandatory">សញ្ញាបញ្ជា</button>
+        <button class="filter-chip" data-filter="information" data-i18n="filterInformation">សញ្ញាព័ត៌មាន</button>
+      </div>
+
+      <div class="results-meta"><span id="resultsCount"></span><span id="activeHint" data-i18n="tapHint">ចុចលើផ្លាកដើម្បីមើលលម្អិត</span></div>
+      <div class="sign-grid" id="signGrid"></div>
+      <div class="empty-state" id="emptyState" hidden>
+        <div>⌕</div><h3 data-i18n="noResults">រកមិនឃើញផ្លាកសញ្ញា</h3><p data-i18n="tryAgain">សូមសាកល្បងពាក្យផ្សេង ឬជ្រើសប្រភេទទាំងអស់។</p>
+      </div>
+    </section>
+
+    <section class="fines-section section" id="fines">
+      <div class="shell">
+        <div class="section-heading light reveal">
+          <div><span class="section-index">02</span><p class="kicker" data-i18n="fineKicker">យល់ដឹងពីការផាកពិន័យ</p></div>
+          <h2 data-i18n="fineTitle">យានយន្តផ្សេងគ្នា។<br>កម្រិតពិន័យផ្សេងគ្នា។</h2>
+          <p data-i18n="fineText">ការមិនគោរពផ្លាកហាមឃាត់ ផ្លាកបញ្ជា ផ្លាកសិទ្ធិអាទិភាព ឬគំនូសចរាចរណ៍ ត្រូវបានគិតតាមប្រភេទយានយន្ត។</p>
+        </div>
+        <div class="fine-selector reveal" role="tablist" aria-label="Vehicle type">
+          <button class="active" data-vehicle="moto"><span class="vehicle-icon">◉</span><span data-i18n="moto">ម៉ូតូ / ត្រីចក្រយាន</span></button>
+          <button data-vehicle="light"><span class="vehicle-icon">▰</span><span data-i18n="lightVehicle">រថយន្តធុនស្រាល</span></button>
+          <button data-vehicle="heavy"><span class="vehicle-icon">▣</span><span data-i18n="heavyVehicle">រថយន្តធុនធ្ងន់</span></button>
+        </div>
+        <div class="fine-display reveal">
+          <div><span class="fine-label" data-i18n="typicalFine">ការផាកពិន័យសម្រាប់ការមិនគោរពស្លាក</span><strong id="fineAmount">100,000 <small>៛</small></strong></div>
+          <p id="fineVehicleText">ម៉ូតូ ទោចក្រយានយន្តសណ្តោងរ៉ឺម៉ក ត្រីចក្រយានយន្ត និងម៉ូតូកង់៤</p>
+          <span class="fine-note" data-i18n="fineNote">* ករណីលើសល្បឿន ការប្រណាំង ឬស្រវឹង មានតារាងពិន័យដាច់ដោយឡែក។</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="guide shell section" id="guide">
+      <div class="section-heading reveal">
+        <div><span class="section-index">03</span><p class="kicker" data-i18n="guideKicker">ចំណាំឆាប់យល់</p></div>
+        <h2 data-i18n="guideTitle">រូបរាង និងពណ៌<br>ប្រាប់អ្នកមុនគេ។</h2>
+        <p data-i18n="guideText">រៀនចំណាំតាមរូបរាង និងពណ៌ ដើម្បីស្គាល់មុខងារផ្លាកបានលឿន ទោះមើលពីចម្ងាយក៏ដោយ។</p>
+      </div>
+      <div class="shape-guide reveal">
+        <article class="shape-card red"><div class="mini-sign circle"></div><span>01</span><h3 data-i18n="redTitle">រង្វង់ក្រហម</h3><p data-i18n="redText">ភាគច្រើនសម្គាល់ការហាមឃាត់ ឬកំណត់។</p></article>
+        <article class="shape-card yellow"><div class="mini-sign triangle"></div><span>02</span><h3 data-i18n="yellowTitle">ត្រីកោណក្រហម</h3><p data-i18n="yellowText">ព្រមានពីហានិភ័យ ឬស្ថានភាពផ្លូវខាងមុខ។</p></article>
+        <article class="shape-card blue"><div class="mini-sign blue-circle"></div><span>03</span><h3 data-i18n="blueTitle">រង្វង់ខៀវ</h3><p data-i18n="blueText">បញ្ជាសកម្មភាពដែលអ្នកបើកបរត្រូវអនុវត្ត។</p></article>
+        <article class="shape-card info"><div class="mini-sign square"></div><span>04</span><h3 data-i18n="infoTitle">ការ៉េខៀវ</h3><p data-i18n="infoText">ផ្តល់ព័ត៌មានទីតាំង សេវា និងទិសដៅ។</p></article>
+      </div>
+    </section>
+
+    <section class="source-banner shell reveal">
+      <div class="source-icon">§</div>
+      <div><p class="kicker" data-i18n="sourceKicker">ប្រភព និងសេចក្តីជូនដំណឹង</p><h2 data-i18n="sourceTitle">សម្រាប់ការសិក្សា និងការយល់ដឹងទូទៅ</h2><p data-i18n="sourceText">ទិន្នន័យពិន័យយោងតាមអនុក្រឹត្យលេខ ៣៩ អនក្រ.បក ចុះថ្ងៃទី១៧ ខែមីនា ឆ្នាំ២០២០។ ចំនួនពិន័យអាចអាស្រ័យលើអំពើល្មើសជាក់ស្តែង ប្រភេទយានយន្ត និងការកែប្រែច្បាប់ថ្មី។</p></div>
+      <a href="https://www.mpwt.gov.kh/kh/documents/sub-decree/257" target="_blank" rel="noopener"><span data-i18n="officialSource">មើលប្រភពផ្លូវការ</span> ↗</a>
+    </section>
+  </main>
+
+  <footer class="footer shell">
+    <a class="brand" href="#top"><span class="brand-mark"><span></span></span><span data-i18n="brand">ផ្លូវសុវត្ថិភាព</span></a>
+    <p data-i18n="footerText">រៀន • គោរព • សុវត្ថិភាព</p>
+    <p>© <span id="year"></span> RoadSafe KH</p>
+  </footer>
+
+  <dialog class="sign-modal" id="signModal">
+    <button class="modal-close" id="modalClose" aria-label="Close">×</button>
+    <div id="modalContent"></div>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>
