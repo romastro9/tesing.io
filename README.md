@@ -4,7 +4,7 @@ A clean, responsive bilingual (Khmer/English) reference guide to essential Cambo
 
 ## Features
 
-- 29 illustrated road signs across warning, prohibition, mandatory and information categories
+- 29 official Cambodian road-sign artworks across warning, prohibition, mandatory and information categories
 - Khmer / English language toggle
 - Search, category filters and grid/list views
 - Light and dark themes
@@ -33,6 +33,8 @@ Then visit `http://localhost:8080`.
 ## Legal source
 
 Fine guidance references Cambodian Sub-Decree No. 39 ANKr.BK dated 17 March 2020, amending Sub-Decree No. 44 on intervention penalties for road traffic law violations. This site is an educational guide, not legal advice. Always check current official sources for a specific case.
+
+Road-sign artwork is sourced from the Wikimedia Commons Cambodia road-sign collection.
 
 ## GitHub Pages
 
