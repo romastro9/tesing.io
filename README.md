@@ -4,7 +4,7 @@ A clean, responsive bilingual (Khmer/English) reference guide to essential Cambo
 
 ## Features
 
-- 28 illustrated road signs across warning, prohibition, mandatory and information categories
+- 29 illustrated road signs across warning, prohibition, mandatory and information categories
 - Khmer / English language toggle
 - Search, category filters and grid/list views
 - Light and dark themes
